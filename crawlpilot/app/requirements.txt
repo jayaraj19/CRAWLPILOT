@@ -1,0 +1,17 @@
+Flask==2.1.2
+Flask-SQLAlchemy==2.5.1
+sqlalchemy==1.4.22
+celery==5.2.7
+werkzeug==2.0.3
+requests==2.26.0
+mysql-connector-python
+pymysql==1.0.2
+cryptography==39.0.1
+beautifulsoup4==4.10.0
+transformers==4.34.0
+sentence-transformers==3.0.0
+scikit-learn==1.2.0
+redis==3.5.3
+gunicorn==21.2.0
+numpy==1.23.0
+scipy==1.10.0

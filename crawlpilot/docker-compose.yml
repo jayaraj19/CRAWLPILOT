@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  flask:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+      - mysql
+    environment:
+      - FLASK_ENV=development
+
+  celery:
+    build: .
+    command: celery -A app.tasks.celery worker --loglevel=info --pool=solo
+    depends_on:
+      - redis
+      - mysql
+
+  redis:
+    image: redis:latest
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3306:3306"
