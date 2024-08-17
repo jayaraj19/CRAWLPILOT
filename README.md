@@ -2,7 +2,7 @@ CRAWLPILOT
 
 Project Overview
 
-CRAWLPILOT is a web scraping and text processing API that allows you to scrape web pages, summarize their content, and analyze the relationships between them using cosine similarity. The project is built using Flask, Celery, SQLite, and Docker. It includes several REST APIs for crawling individual and bulk URLs, generating reports, and computing cosine similarity matrices for text embeddings.
+CRAWLPILOT is a web scraping and text processing API that allows you to scrape web pages, summarize their content, and analyze the relationships between them using cosine similarity. The project is built using Flask, Celery, MYSQL and Docker. It includes several REST APIs for crawling individual and bulk URLs, generating reports, and computing cosine similarity matrices for text embeddings.
 
 Features
 
